@@ -43,6 +43,6 @@ defmodule FriendsApp.DB.CSV do
   end
 
   defp save_csv_file(data) do
-    File.write!("#{File.cwd!}/friends.csv", data, [:append])
+    File.write!("#{File.cwd!()}/friends.csv", data, [:append])
   end
 end
